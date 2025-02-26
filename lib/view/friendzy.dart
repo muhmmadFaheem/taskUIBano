@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice_incu/constant/app_string/app_string.dart';
+import 'package:practice_incu/widgets/custom_logo.dart';
 import 'package:practice_incu/widgets/customposts.dart';
 
 class Friends extends StatelessWidget {
@@ -32,6 +33,13 @@ class Friends extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                CustomLogo(),
+                CustomLogo(),
+              ],
+            ),
 
             CustomPost(),
             CustomPost(),

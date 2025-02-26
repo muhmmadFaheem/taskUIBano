@@ -2,7 +2,7 @@ class AppString {
   static const String let = "Let's meeting new \n people around you ";
   static const String loginPhone = 'Login with Phone';
   static const String loginGoogle = 'Login with Phone';
-  static const String dontHave = 'Don' 't have an account';
+  static const String dontHave = 'Don' 't have an account?';
   static const String signUp = 'Sing Up';
   static const String friend = 'Friendzy';
   static const String makefriend = 'Make Friends';

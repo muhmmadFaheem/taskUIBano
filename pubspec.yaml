@@ -79,7 +79,7 @@ flutter:
      - family: Montserrat
        fonts:
          - asset: assets/font/Montserrat-VariableFont_wght.ttf
-           weight: 900
+           weight: 700
 
   #
   # For details regarding fonts from package dependencies,

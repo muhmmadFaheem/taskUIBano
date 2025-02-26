@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:practice_incu/routes/route_name.dart';
+import 'package:practice_incu/routes/route_screen.dart';
 import 'package:practice_incu/view/friendzy.dart';
 import 'package:practice_incu/view/matches.dart';
 import 'package:practice_incu/view/screen1.dart';
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      initialRoute: RouteName.splashScreen,
+      routes: RouteScreen.getScreen(),
       home: HomePage(),
     );
   }

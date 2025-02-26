@@ -8,7 +8,7 @@ class CustomLogo extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: SizedBox(
-        height: 150,
+        height: 110,
         child: Column(
           children: [
             Container(

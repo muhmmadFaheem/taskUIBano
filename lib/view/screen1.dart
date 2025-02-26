@@ -15,13 +15,13 @@ class HomePage extends StatelessWidget {
         children: [
 
           Padding(
-            padding: const EdgeInsets.only(top: 90),
+            padding: const EdgeInsets.only(top: 150),
             child: Image.asset('assets/splash.png',
             height: 350,
             width: 280,
             fit: BoxFit.cover,),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 30,),
           Center(
             child: Text(AppString.let,
             style: TextStyle(
@@ -31,15 +31,35 @@ class HomePage extends StatelessWidget {
               fontWeight: FontWeight.bold
             ),),
           ),
+          SizedBox(height: 20,),
           CustomButton(title: AppString.loginPhone, color:Color(0xff456b9c),
             icon: Icon(Icons.call),),
           SizedBox(height: 10,),
-          CustomButton(title: AppString.loginGoogle, color:Color(0xffffffff),
-              icon: Icon(Icons.facebook))
+          CustomButton(title: AppString.loginGoogle, color:Colors.grey.withOpacity(0.3),
+              icon: Icon(Icons.facebook)),
+          SizedBox(height: 20,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(AppString.dontHave,
+              style: TextStyle(
+                color: Colors.grey.withOpacity(0.6),
+                fontSize: 20,
 
+              ),),
+              SizedBox(width: 3,),
+              Text("Sign Up",
+                style: TextStyle(
+                  color: Color(0xff456b9c),
+                  fontSize: 20,
+
+                ),)
+            ],
+          ),
 
         ],
       ),
+
     );
   }
 }
